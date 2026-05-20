@@ -33,7 +33,7 @@ This extension is not yet on the Chrome Web Store, so you need to load it manual
 
 ### Step 2 — Add your API key to the extension
 
-1. Download or clone this repository
+1. Download the `extension` folder from this repository
 2. Open `content.js` in any text editor
 3. On line 1, replace `YOUR_API_KEY` with your key:
    ```js
