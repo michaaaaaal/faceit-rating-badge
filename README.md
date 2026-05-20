@@ -1,6 +1,7 @@
 # FACEIT Rating Badge
 
 A simple Chrome extension that displays FACEIT Season 8 Rating badges on player cards in matchrooms.
+**THIS EXTENSION LOOKS AND WORKS BEST COMBINED WITH REPEEK ADVANCED MATCHROOM STATS!!!**
 
 ![Ratings example showing colored pill badges on player cards](screenshot.png)
 
