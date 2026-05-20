@@ -1,11 +1,11 @@
-const API_KEY = "8e6b68e0-9705-49f3-9737-f1ba895f38b0";
+const API_KEY = "YOUR_API_KEY";
 
 const ratingCache = {};
 const fetchInProgress = new Set();
 const queued = new Set();
 const cardBadgeMap = new Map();
 
-// Track badge positions every frame
+// Track badge position every frame
 function updateBadgePositions() {
   cardBadgeMap.forEach(function(badge, card) {
     if (!document.body.contains(card)) {
@@ -25,7 +25,7 @@ requestAnimationFrame(updateBadgePositions);
 
 function getCardContainer(nameEl) {
   let el = nameEl;
-  for (let i = 0; i < 5; i++) el = el.parentNode;
+  for (let i = 0; i < 6; i++) el = el.parentNode;
   return el;
 }
 
@@ -117,7 +117,7 @@ function injectBadge(card, rating) {
     "border:1px solid " + c.accent,
     "box-shadow:inset 0 1px 0 rgba(255,255,255,0.08)",
     "line-height:1.4",
-    "pointer-events:auto"  // allows hover tooltip
+    "pointer-events:auto"  
   ].join(";");
   badge.textContent = rating.toFixed(2);
   badge.title = rating < 0.90 ? "Poor" : rating < 1.15 ? "Okay" : rating < 1.24 ? "Good" : "High Impact";
