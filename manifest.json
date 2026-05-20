@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FACEIT Rating Badge",
+  "version": "1.0",
+  "description": "Shows FACEIT Season 8 Rating as a green badge in matchrooms",
+  "host_permissions": [
+    "https://www.faceit.com/*",
+    "https://open.faceit.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.faceit.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
